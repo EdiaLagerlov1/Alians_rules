@@ -1,0 +1,38 @@
+# How to install gemini cli in WSL
+
+Install Gemini CLI in WSL
+    1.  Make Sure Node.js is Installed
+        Gemini CLI requires Node.js version 18 or newer. In WSL, run:
+
+        bash
+            node -v
+            If Node.js is not installed, or the version is too old, install it with:
+
+        bash
+            sudo apt update
+            sudo apt install nodejs npm
+        
+        Or, for the latest Node.js, use nvm (Node Version Manager):
+
+        bash
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+            source ~/.bashrc
+            nvm install --lts
+
+    2.  Install Gemini CLI Using npm
+        Install Gemini CLI globally with:
+
+        bash
+            npm install -g @google/gemini-cli
+            Alternatively, run directly via npx (no global install required):
+
+        bash
+            npx https://github.com/google-gemini/gemini-cli
+
+    3.  Run and Authenticate
+        Launch Gemini CLI by typing:
+
+        bash
+            gemini
+        On first launch, follow the prompts for color scheme and Google authentication.
+

@@ -1,0 +1,68 @@
+---
+## Claude Code Overview1
+
+This document provides a guide for setting up and using the Claude CLI for coding assistance.
+
+---
+### Prerequisites
+
+* **Node.js**: Version 18 or newer
+* **Account**: A Claude.ai (recommended) or Anthropic Console account
+
+---
+### Installation
+
+To install the Claude Code command-line tool, use the following commands based on your operating system:
+
+* **macOS, Linux, WSL**: `curl -fsSL https://claude.ai/install.sh | bash`
+* **Windows PowerShell**: `irm https://claude.ai/install.ps1 | iex`
+* **Windows CMD**: `curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd`
+* **Alternatively**: `npm install -g @anthropic-ai/claude-code`
+
+---
+### Setup Notes
+
+If `~/.local/bin` is not in your system's PATH, you can add it by running the following command:
+
+`export PATH="~/.local/bin:$PATH"`
+
+---
+### Running `sudo` with Claude CLI in WSL
+
+For a smoother development experience, it's recommended to configure passwordless `sudo` in WSL to avoid continuous password prompts.
+
+#### Passwordless Sudo (Recommended for Dev)
+
+To configure your user for passwordless `sudo`, run this command in your WSL terminal (as your normal user):
+
+`echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/dont-prompt-$USER-for-sudo-password`
+
+This command adds a rule that allows your user to run any command with `sudo` without being prompted for a password.
+
+#### Test the configuration:
+
+To verify that passwordless `sudo` is working, run the following command. It should print 'root' without asking for a password.
+
+`sudo whoami`
+
+---
+### Getting Started with the Claude CLI
+
+1.  **Navigate to your project**: `cd [...your-awesome-project....]`
+2.  **Start Claude**: `claude` (You will be prompted to log in on first use).
+3.  **To exit**: Type `/exit`.
+4.  **Create a `CLAUDE.md` file**: Run `/init` to generate a file with instructions for Claude.
+
+---
+### Tips for Using the CLI
+
+* Mount your Windows C drive to your Linux home folder to access it easily. For a permanent mount with a link named `CDrive`, use a prompt like: "mount my C: drive permently and add link to my linux home folder with the link name CDrive"
+* Use Claude to help with file analysis, editing, bash commands, and Git.
+* Be as specific as you would with another engineer for the best results.
+
+---
+### WSL User Home Folder
+
+The default Windows path for a WSL user home folder is:
+
+`\\wsl.localhost\Ubuntu\home\rmisegal`
