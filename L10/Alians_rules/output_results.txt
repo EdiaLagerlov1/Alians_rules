@@ -1,0 +1,203 @@
+Generating data...
+Data shape: (5000, 6)
+
+Column distributions:
+  A: 70.0% ones
+  B: 69.2% ones
+  C: 51.3% ones
+  D: 51.0% ones
+  E: 80.4% ones
+  F: 79.8% ones
+
+Finding frequent itemsets (support >= 30%)...
+Found 27 frequent itemsets
+
+Generating association rules (confidence >= 70%)...
+
+================================================================================
+ASSOCIATION RULES (Support >= 30%, Confidence >= 70%)
+Sorted by LIFT (best relationships first)
+================================================================================
+
+Total rules found: 30
+
+Rule 1: [Lift: 1.013]
+  C=1 → A=1
+  Support:    36.38% (1819 transactions)
+  Confidence: 70.92%
+  Lift:       1.013
+
+Rule 2: [Lift: 1.008]
+  B=1, E=1, F=1 → A=1
+  Support:    31.20% (1560 transactions)
+  Confidence: 70.59%
+  Lift:       1.008
+
+Rule 3: [Lift: 1.005]
+  A=1, B=1 → E=1
+  Support:    39.20% (1960 transactions)
+  Confidence: 80.79%
+  Lift:       1.005
+
+Rule 4: [Lift: 1.005]
+  B=1, E=1 → A=1
+  Support:    39.20% (1960 transactions)
+  Confidence: 70.38%
+  Lift:       1.005
+
+Rule 5: [Lift: 1.004]
+  A=1, B=1, F=1 → E=1
+  Support:    31.20% (1560 transactions)
+  Confidence: 80.70%
+  Lift:       1.004
+
+Rule 6: [Lift: 1.003]
+  B=1, F=1 → A=1
+  Support:    38.66% (1933 transactions)
+  Confidence: 70.24%
+  Lift:       1.003
+
+Rule 7: [Lift: 1.003]
+  E=1, F=1 → A=1
+  Support:    45.00% (2250 transactions)
+  Confidence: 70.22%
+  Lift:       1.003
+
+Rule 8: [Lift: 1.001]
+  B=1 → E=1
+  Support:    55.70% (2785 transactions)
+  Confidence: 80.51%
+  Lift:       1.001
+
+Rule 9: [Lift: 1.001]
+  B=1 → A=1
+  Support:    48.52% (2426 transactions)
+  Confidence: 70.14%
+  Lift:       1.001
+
+Rule 10: [Lift: 1.001]
+  A=1, F=1 → E=1
+  Support:    45.00% (2250 transactions)
+  Confidence: 80.50%
+  Lift:       1.001
+
+Rule 11: [Lift: 1.001]
+  A=1 → E=1
+  Support:    56.36% (2818 transactions)
+  Confidence: 80.47%
+  Lift:       1.001
+
+Rule 12: [Lift: 1.001]
+  E=1 → A=1
+  Support:    56.36% (2818 transactions)
+  Confidence: 70.10%
+  Lift:       1.001
+
+Rule 13: [Lift: 1.000]
+  A=1, E=1 → F=1
+  Support:    45.00% (2250 transactions)
+  Confidence: 79.84%
+  Lift:       1.000
+
+Rule 14: [Lift: 1.000]
+  D=1 → E=1
+  Support:    40.96% (2048 transactions)
+  Confidence: 80.38%
+  Lift:       1.000
+
+Rule 15: [Lift: 1.000]
+  A=1 → F=1
+  Support:    55.90% (2795 transactions)
+  Confidence: 79.81%
+  Lift:       1.000
+
+Rule 16: [Lift: 1.000]
+  F=1 → A=1
+  Support:    55.90% (2795 transactions)
+  Confidence: 70.02%
+  Lift:       1.000
+
+Rule 17: [Lift: 0.999]
+  C=1 → E=1
+  Support:    41.20% (2060 transactions)
+  Confidence: 80.31%
+  Lift:       0.999
+
+Rule 18: [Lift: 0.999]
+  B=1, F=1 → E=1
+  Support:    44.20% (2210 transactions)
+  Confidence: 80.31%
+  Lift:       0.999
+
+Rule 19: [Lift: 0.998]
+  F=1 → E=1
+  Support:    64.08% (3204 transactions)
+  Confidence: 80.26%
+  Lift:       0.998
+
+Rule 20: [Lift: 0.998]
+  E=1 → F=1
+  Support:    64.08% (3204 transactions)
+  Confidence: 79.70%
+  Lift:       0.998
+
+Rule 21: [Lift: 0.998]
+  A=1, B=1 → F=1
+  Support:    38.66% (1933 transactions)
+  Confidence: 79.68%
+  Lift:       0.998
+
+Rule 22: [Lift: 0.998]
+  C=1, F=1 → E=1
+  Support:    32.56% (1628 transactions)
+  Confidence: 80.24%
+  Lift:       0.998
+
+Rule 23: [Lift: 0.997]
+  A=1, B=1, E=1 → F=1
+  Support:    31.20% (1560 transactions)
+  Confidence: 79.59%
+  Lift:       0.997
+
+Rule 24: [Lift: 0.997]
+  B=1 → F=1
+  Support:    55.04% (2752 transactions)
+  Confidence: 79.56%
+  Lift:       0.997
+
+Rule 25: [Lift: 0.994]
+  D=1 → F=1
+  Support:    40.44% (2022 transactions)
+  Confidence: 79.36%
+  Lift:       0.994
+
+Rule 26: [Lift: 0.994]
+  B=1, E=1 → F=1
+  Support:    44.20% (2210 transactions)
+  Confidence: 79.35%
+  Lift:       0.994
+
+Rule 27: [Lift: 0.993]
+  D=1, F=1 → E=1
+  Support:    32.28% (1613 transactions)
+  Confidence: 79.82%
+  Lift:       0.993
+
+Rule 28: [Lift: 0.991]
+  C=1 → F=1
+  Support:    40.58% (2029 transactions)
+  Confidence: 79.10%
+  Lift:       0.991
+
+Rule 29: [Lift: 0.990]
+  C=1, E=1 → F=1
+  Support:    32.56% (1628 transactions)
+  Confidence: 79.03%
+  Lift:       0.990
+
+Rule 30: [Lift: 0.987]
+  D=1, E=1 → F=1
+  Support:    32.28% (1613 transactions)
+  Confidence: 78.81%
+  Lift:       0.987
+
